@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/pricePlot"
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        androidplot.renderMode="use_background_thread"
+        ap:label="Intraday price"
+        ap:domainLabel=""
+        androidPlot.graphWidget.marginTop="5dp"
+        androidPlot.graphWidget.marginLeft="15dp"
+        androidPlot.graphWidget.marginBottom="20dp"
+        androidPlot.graphWidget.marginRight="10dp"
+        ap:rangeLabel="Range"
+        ap:legendTextSize="15sp"
+        ap:legendIconHeight="15dp"
+        ap:legendIconWidth="15dp"
+        ap:legendHeight="0dp"
+        ap:legendAnchorPosition="right_bottom"
+        android:layout_weight="0.60" />
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/volumePlot"
+        android:layout_width="fill_parent"
+        android:layout_height="108dp"
+        androidplot.renderMode="use_background_thread"
+        ap:label="Volume"
+        ap:domainLabel=""
+        androidPlot.graphWidget.marginTop="5dp"
+        androidPlot.graphWidget.marginLeft="15dp"
+        androidPlot.graphWidget.marginBottom="20dp"
+        androidPlot.graphWidget.marginRight="10dp"
+        ap:rangeLabel="Range"
+        ap:legendTextSize="15sp"
+        ap:legendIconHeight="15dp"
+        ap:legendIconWidth="15dp"
+        ap:legendHeight="0dp"
+        ap:legendAnchorPosition="right_bottom"
+        android:layout_weight="0.40" />
+
+</LinearLayout>

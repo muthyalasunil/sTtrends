@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_weight="0.03">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.96">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
+                android:id="@+id/txtScripName"
+                android:textColor="@color/primary_dark_material_dark"
+                style="@style/AppTheme.NoActionBar"
+                android:padding="4dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/AppTheme"
+                android:id="@+id/txtDate"
+                android:paddingLeft="5dp"
+                android:textSize="10dp"
+                android:textColor="@color/primary_dark_material_dark"
+                android:hint="Trade Date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/AppTheme"
+                android:id="@+id/txtClose"
+                android:paddingTop="2dp"
+                android:paddingLeft="3dp"
+                android:paddingBottom="1dp"
+                android:textSize="25dp"
+                android:textIsSelectable="false"
+                android:hint="0.0"
+                android:textColor="@color/primary_dark_material_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/txtChange"
+                android:paddingLeft="7dp"
+                android:hint="0.0%" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_alignRight="@+id/linearLayout"
+            android:layout_alignEnd="@+id/linearLayout"
+            android:paddingBottom="2dp"
+            android:paddingTop="1dp"
+            android:paddingLeft="5dp"
+            android:textAlignment="viewEnd">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/lblVolume"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:text="Volume"
+                    android:textAppearance="@style/AppTheme"
+                    android:textColor="@color/primary_dark_material_dark"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:id="@+id/txtVolume"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="15dip"
+                    android:hint="0.0"
+                    android:textAppearance="@style/AppTheme"
+                    android:textAlignment="viewEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblOpen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:text="High"
+                    android:textAppearance="@style/AppTheme"
+                    android:textColor="@color/primary_dark_material_dark"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:id="@+id/txtHigh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="14dip"
+                    android:hint="0.0"
+                    android:textAppearance="@style/AppTheme"
+                    android:textAlignment="viewEnd" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:text="Low"
+                    android:textAppearance="@style/AppTheme"
+                    android:textColor="@color/primary_dark_material_dark"
+                    android:singleLine="true"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:id="@+id/txtLow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="14dip"
+                    android:hint="0.0"
+                    android:textAppearance="@style/AppTheme"
+                    android:textAlignment="viewEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="14dip"
+                    android:hint="0.0"
+                    android:textAppearance="@style/AppTheme"
+                    android:textAlignment="viewStart"
+                    android:text="52High" />
+
+                <TextView
+                    android:id="@+id/txtHigh52"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="14dip"
+                    android:hint="0.0"
+                    android:textAppearance="@style/AppTheme"
+                    android:textAlignment="viewEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="14dip"
+                    android:hint="0.0"
+                    android:textAppearance="@style/AppTheme"
+                    android:textAlignment="viewStart"
+                    android:text="52Low" />
+
+                <TextView
+                    android:id="@+id/txtLow52"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="14dip"
+                    android:hint="0.0"
+                    android:textAppearance="@style/AppTheme"
+                    android:textAlignment="viewEnd" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>
